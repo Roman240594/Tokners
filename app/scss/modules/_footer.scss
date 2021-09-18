@@ -1,0 +1,146 @@
+.footer {
+    padding: 65px 0 40px;
+    text-align: center;
+    background-color: $color-ebony;
+    
+    @include respond-to(desktop) {
+        padding: 60px 0 60px;
+        position: relative;
+    }
+
+    @include respond-to(big-desktop) {
+        padding: 100px 0 100px;
+    }
+
+    &__bg {
+        @include respond-to(desktop) {
+            position: absolute;
+            background-image: url(../assets/images/footer.png);
+            background-size: contain;
+            width: 1585px;
+            height: 894px;
+            right: 0;
+            left: auto;
+            bottom: 0px;
+            z-index: 0;
+        }
+    }
+
+    &__wrapper {
+        @include respond-to(tablet-landscape) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include respond-to(desktop) {
+            padding: 0 15px;
+        }
+    }
+
+    &__nav {
+        display: none;
+
+        @include respond-to(desktop) {
+            display: block;
+            margin-bottom: 60px;
+        }
+
+        @include respond-to(big-desktop) {
+            margin-bottom: 128px;
+        }
+
+        &-list {
+            justify-content: center;
+            margin: 0 -73px;
+        }
+
+        &-item {
+            padding: 0 73px;
+            position: relative;
+
+            &::after {
+                content: '/';
+                position: absolute;
+                font-size: 16px;
+                line-height: 20px;
+                color: rgba(255, 255, 255, 0.16);
+                right: 0;
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+        }
+    }
+    
+    &__social {
+        display: flex;
+        margin: 0 -4.8px;
+        margin-bottom: 32px; 
+
+        @media screen and (min-width: 375px) {
+            justify-content: center;
+        }
+
+        &-circle {
+            border: 1.92px solid rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            width: 48px;
+            height: 47px;
+            margin: 0 4.8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-link {
+            padding: 10px;
+        }
+
+        &-img {
+            max-width: 19px;
+        }
+    }
+
+    &__copyrights {
+        @include respond-to(desktop) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &-text {
+            font-family: $font-bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 22px;
+            color: $color-white;
+        }
+
+        &-author {
+            display: inline-block;
+            font-family: $font-normal;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 140%;
+            letter-spacing: 0.02em;
+            text-decoration-line: underline;
+            color: rgba(255, 255, 255, 0.5);
+            padding-left: 25px;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 21px;
+                height: 22px;
+                position: absolute;
+                background-image: url(../assets/icons/footer-author.svg);
+                top: 0;
+                left: 0;
+                fill: $color-red;
+            }
+        }
+    }
+}

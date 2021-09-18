@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body { 
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    z-index: 2;
+
+    @include respond-to(tablet-portrait) {
+        max-width: calc(100% - 80px);
+    }
+
+    @include respond-to(tablet-landscape) {
+        max-width: calc(100% - 120px);
+    }
+
+    @include respond-to(desktop) {
+        max-width: calc(100% - 180px);
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
+    }
+
+    @include respond-to(big-desktop) {
+        max-width: calc(100% - 326px);
+    }
+
+    &_small {
+        @media screen and (max-width: 370px) {
+        max-width: calc(100% - 10px);
+        margin: 0 auto;
+        }
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.logo {
+    z-index: 1;
+
+    @include respond-to(tablet-landscape) {
+        margin-right: 19px;
+    }
+
+    @include respond-to(desktop) {
+        margin-right: 63px;
+    }
+
+    &__img {
+        max-width: 155px;
+
+        @include respond-to(tablet-landscape) {
+            max-width: 187px;
+        }
+
+        &-footer {
+            max-width: 207px;
+        }
+
+        &_small {
+            max-width: 58px;
+        }
+    }
+
+    &__footer {
+        margin-bottom: 32px;
+    }
+}
+
+.subtitle {
+    font-family: $font-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    display: table;
+    color: #2B3087;
+}
+
+.title {
+    font-family:$font-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: $color-white;
+
+    @include respond-to(desktop) {
+        font-size: 48px;
+        line-height: 54px;
+    }
+}
+
+.text {
+    font-family: $font-normal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-titan;
+
+    @include respond-to(desktop) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="16x16" rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tokners</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__bg"></div>
+        <div class="header__inner">
+            <div class="header__inner-bg"></div>
+            <div class="header__wrapper flex flex_align-center">
+                <a class="logo__link" href="/">
+                    <picture class="logo">
+                        <source srcset="assets/images/logo.png" media="(max-width: 1200px)">
+                        <img class="logo__img" src="assets/images/logo2x.png" alt="Tokners">
+                    </picture>
+                </a>
+                <div class="header__content">
+                    <button class="burger-btn" id="burgerBtn">
+                        <div class="burger-btn__line burger-btn__line-top" id="burgerBtnLineTop"></div>
+                        <div class="burger-btn__line burger-btn__line-center" id="burgerBtnLineCenter"></div>
+                        <div class="burger-btn__line burger-btn__line-bottom" id="burgerBtnLineBottom"></div>
+                    </button>
+                    <div class="header__nav flex" id="navList">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a class="nav__link" href="team.html">Our team</a></li>
+                                <li class="nav__item"><a class="nav__link" href="tokens.html">Tokens</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#">Connect wallet</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#">Lightpaper</a></li>
+                            </ul>
+                        </nav>
+                        <div class="auth-btns">
+                            <a class="button auth-btns__burger-menu" href="#">Sign In</a>
+                            <a class="button button_border-green auth-btns__burger-menu" href="#">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="p-home">
+        <section class="p-home__banner">
+            <div class="p-home__banner-inner flex flex_wrap">
+                <div class="p-home__banner-content">
+                    <div class="subtitle p-home__banner-subtitle">
+                        At Tokners we are
+                    </div>
+                    <h1 class="title p-home__banner-title">
+                        Reimagining social media through the power of the blockchain.
+                    </h1>
+                    <div class="text p-home__banner-text">
+                        We are creating social media 3.0 with influencers, celebrities and creators being able
+                        to
+                        launch
+                        their own digital currency by simply creating a profile with media content posted as Non
+                        fungible Tokens that can be owned and traded on the Tknrs network
+                    </div>
+                    <a class="button button_green p-home__banner-button" href="#">Learn More</a>
+                </div>
+                <picture class="p-home__banner-img-wrapper">
+                    <source srcset="assets/images/banner-img.png" media="(max-width: 375px)">
+                    <img class="p-home__banner-img" src="assets/images/banner-img2x.png" alt="Tokners">
+                </picture>
+            </div>
+        </section>
+        <section class="p-home__info">
+            <div class="wrapper p-home__info-inner">
+                <div class="p-home__info-column">
+                    <div class="p-home__info-item">
+                        <div class="p-home__info-img-wrapper p-home__info_green">
+                            <img class="p-home__info-img" src="assets/images/crown.png" alt="circle">
+                        </div>
+                        <h4 class="title p-home__info-title">
+                            For <span class="p-home__info-title p-home__info-title_green">Creators</span>
+                        </h4>
+                        <div class="text p-home__info-text text p-home__info-text_margin">
+                            Creators can gain independence through a decentralised digital currency system that
+                            is
+                            dependent on growing and engaging with the community and also their star power. They
+                            own
+                            10-15% of the total value of the tokens minted.
+                        </div>
+                        <a class="p-home__info-link p-home__info-link_green" href="#">Learn More<i
+                                class="p-home__info-link-icon fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="p-home__info-column">
+                    <div class="p-home__info-item">
+                        <div class="p-home__info-img-wrapper p-home__info_blue">
+                            <img class="p-home__info-img" src="assets/images/info-star.png" alt="star-in-circle">
+                        </div>
+                        <h4 class="title p-home__info-title">
+                            For <span class="p-home__info-title p-home__info-title_blue">Holders</span>
+                        </h4>
+                        <div class="text p-home__info-text">
+                            Holding social tokens allows the individual to gain access to benefits including
+                            unreleased
+                            content, private communities, direct access to celebrity, early- access to tickets
+                            and more as well as the ability to trade with other communities in order to gain
+                            access to more creator content with early token buyers being the biggest winners as
+                            the value of the token increases with more buyers.
+                        </div>
+                        <a class="p-home__info-link p-home__info-link_blue" href="#">Learn More<i
+                                class="p-home__info-link-icon fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-home__benefits">
+            <picture class="p-home__benefits-img-wrapper">
+                <source srcset="assets/images/benefit-img.png" media="(max-width: 900px)">
+                <img class="p-home__benefits-img" src="assets/images/benefit-img2x.png" alt="figure-background">
+            </picture>
+            <div class="p-home__benefits-content">
+                <h2 class="title p-home__benefits-title"> What makes us different?</h2>
+                <p class="p-home__benefits-subtitle">
+                    We would only launch tokens with the express permission of the creators.
+                </p>
+                <p class="text p-home__benefits-text">
+                    There are several thousand celebrities and creators on twitter, tiktok, Instagram and YouTube
+                    with followings in the millions who we would be actively engaging before we go viral.
+                </p>
+                <p class="text p-home__benefits-text">
+                    We would get them on our
+                    platform and they would see the opportunity to create a fan driven digital economy where their
+                    digital content can be traded as NFTs and their most loyal fans can have the monetary value of
+                    their creator's currency increase significantly as they promote their digital currency across
+                    their channels while our native token holders benefit from the Weentar popularity.
+                </p>
+            </div>
+        </section>
+        <section class="p-home__description">
+            <div class="wrapper p-home__description p-home__description_bg">
+                <div class="p-home__description-wrapper">
+                    <div class="p-home__description-column">
+                        <div class="marking marking_dot marking_green">Q1</div>
+                        <div class="p-home__description-year">2021</div>
+                        <ol class="p-home__description-list p-home__description-list_green">
+                            <li>
+                                <p class="p-home__description-item">Team set-up</p>
+                            </li>
+                            <li>
+                                <p class="p-home__description-item">Launch of informational website</p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="p-home__description-column">
+                        <div class="marking marking_dot marking_blue">Q2</div>
+                        <div class="p-home__description-year">2021</div>
+                        <ol class="p-home__description-list p-home__description-list_blue">
+                            <li>
+                                <p class="p-home__description-item">Presale and exchange listings</p>
+                            </li>
+                            <li>
+                                <p class="p-home__description-item">Blockchain development and launch</p>
+                            </li>
+                            <li>
+                                <p class="p-home__description-item">Launch of our MVP</p>
+                            </li>
+                            <li>
+                                <p class="p-home__description-item">Influencer agency partnerships</p>
+                            </li>
+                            <li>
+                                <p class="p-home__description-item">Marketing and promotion</p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="p-home__description-column">
+                        <div class="marking marking_dot marking_yellow">Q3</div>
+                        <div class="p-home__description-year">2021</div>
+                        <ol class="p-home__description-list p-home__description-list_yellow">
+                            <li>
+                                <p class="p-home__description-item p-home__description-item_small">Celebrity,
+                                    Creator and Influencer partnerships</p>
+                            </li>
+                            <li>
+                                <p class="p-home__description-item p-home__description-item_small">Expansion of
+                                    creator
+                                    communities on our platform</p>
+                            </li>
+                            <li>
+                                <p class="p-home__description-item p-home__description-item_small">More Marketing
+                                    and
+                                    promotion</p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="p-home__description-column">
+                        <div class="marking marking_dot marking_red">
+                            Q4
+                        </div>
+                        <div class="p-home__description-year">
+                            2021
+                        </div>
+                        <ol class="p-home__description-list p-home__description-list_red">
+                            <li>
+                                <p class="p-home__description-item">Mainstream partnerships</p>
+                            </li>
+                            <li>
+                                <p class="p-home__description-item">500 active creator communities</p>
+                            </li>
+                            <li>
+                                <p class="p-home__description-item">2Million active community members</p>
+                            </li>
+                            <li>
+                                <p class="p-home__description-item">More Marketing and promotion</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-home__weentar">
+            <picture class="p-home__weentar-img-wrapper">
+                <source srcset="assets/images/description-img.png" media="(max-width: 900px)">
+                <img class="p-home__weentar-img" src="assets/images/description-img2x.png" alt="figure-background">
+            </picture>
+            <div class="p-home__weentar-content">
+                <div class="p-home__weentar-heading">
+                    <picture class="logo p-home__weentar-logo">
+                        <a class="logo__link" href="/">
+                            <source srcset="assets/images/logo__small2x.png" media="(max-width: 900px)">
+                            <img class="logo__img logo__img_small" src="assets/images/logo_small.png" alt="Tokners">
+                        </a>
+                    </picture>
+                    <h2 class="title p-home__weentar-title">Weentar is coming</h2>
+                </div>
+                <div class="p-home__weentar-text-main">
+                    <div class="text p-home__weentar-text p-home__weentar-text_bold">
+                        Cryptocurrency adoption is at less than 1% of the global world population with some
+                        countries and entities actively fighting against its mass adoption and the smartest
+                        developers and nerds holding the fort.</div>
+                    <div class="text p-home__weentar-text">
+                        Bitcoin was the first, and it has since grown to thousands of tokens launched all aiming to
+                        fix one problem or the other with some quite simply FOMOing the moment. Our goal is to bring
+                        mass adoption to the cryptocurrency space by dumbing it down. How far down? So down that
+                        even a celebrity can explain it in simple words to their followers and have them download an
+                        app, buy into the social currency of their favourite person and watch their
+                        investment as is with other crypto currency project.</div>
+                </div>
+                <details>
+                    <summary class="p-home__weentar-detail p-home__weentar-detail_btn">Read More</summary>
+                    <div class="text p-home__weentar-text">
+                        We are trying to do to this space what investment apps did for the "nonexistent retail
+                        investors". We are gamefying digital currency, bringing in popular faces instead of hard
+                        to
+                        understand projects to make it the norm and inadvertently being the "gateway drug" for a
+                        lot
+                        of people to finally give this space a real look.</div>
+                    <div class="text p-home__weentar-text p-home__weentar-text_bold">A new digital economy is
+                        coming. People would be just as powerful as countries and creators would be paid beyond
+                        the
+                        peanuts that conventional social media platforms can offer.</div>
+                    <div class="text p-home__weentar-text">
+                        There would be new markets and advertisers with little to offer would not find home there.
+                        Like Kanye said, </div>
+                    <div class="text p-home__weentar-text p-home__weentar-text_italic">
+                        "Personalities would become the new currency, and services would be built on top of them".
+                    </div>
+                    <div class="text p-home__weentar-text text p-home__weentar-text_big">
+                        Well, Kanye didn't exactly say that, but it sounds like something we hope he would say.
+                    </div>
+                    <div class="text p-home__weentar-text p-home__weentar-text_big">
+                        Currency is digital, it has been that way for a while now, but this time there would be no
+                        dead presidents on the money, there would people like you on the money, and you would own it
+                        because it would make the most sense in the world.
+                    </div>
+                </details>
+            </div>
+        </section>
+        <section class="p-home__phases">
+            <div class="wrapper">
+                <h2 class="title p-home__phases-heading">Presale Details</h2>
+                <div class="p-home__phases-wrapper">
+                    <div class="p-home__phases-column p-home__phases-column_hidden">
+                        <div class="p-home__phases-content p-home__phases-content_one">
+                            <div class="marking marking_green p-home__phases-marking">01</div>
+                            <div class="title p-home__phases-title">Phase One</div>
+                            <div class="p-home__phases-date">0/04/2021 - 16/04/2021</div>
+                            <div class="p-home__phases-text  p-home__phases-text_space">1 BNB = 100000 WNTR</div>
+                            <div class="p-home__phases-text">
+                                <span class="p-home__phases-text_normal"> Soft cap:</span> 5000 BNB
+                            </div>
+                            <div class="p-home__phases-text">
+                                <span class="p-home__phases-text_normal"> Hard cap:</span> 10000 BNB
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-home__phases-column p-home__phases-column_pad-bot">
+                        <div class="p-home__phases-content  p-home__phases-content_two">
+                            <div class="marking marking_blue">02</div>
+                            <div class="title p-home__phases-title">Phase Two</div>
+                            <div class="p-home__phases-date">0/04/2021 - 16/04/2021</div>
+                            <div class="p-home__phases-text p-home__phases-text_space">1 BNB = 100000 WNTR</div>
+                            <div class="p-home__phases-text">
+                                <span class="p-home__phases-text_normal"> Soft cap:</span> 5000 BNB
+                            </div>
+                            <div class="p-home__phases-text">
+                                <span class="p-home__phases-text_normal"> Hard cap:</span> 10000 BNB
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-home__phases-column p-home__phases-column_hidden">
+                        <div class="p-home__phases-content  p-home__phases-content_three">
+                            <div class="marking marking_yellow">03</div>
+                            <div class="title p-home__phases-title">Phase Three</div>
+                            <div class="p-home__phases-date">0/04/2021 - 16/04/2021</div>
+                            <div class="p-home__phases-text p-home__phases-text_space">1 BNB = 100000 WNTR</div>
+                            <div class="p-home__phases-text">
+                                <span class="p-home__phases-text_normal"> Soft cap:</span> 5000 BNB
+                            </div>
+                            <div class="p-home__phases-text">
+                                <span class="p-home__phases-text_normal"> Hard cap:</span> 10000 BNB
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-home__phases-dots">
+                    <span class="p-home__phases-dot"></span>
+                    <span class="p-home__phases-dot"></span>
+                    <span class="p-home__phases-dot"></span>
+                </div>
+            </div>
+        </section>
+        <section class="p-home__buy">
+            <div class="wrapper">
+                <h2 class="title p-home__buy-title">How to buy</h2>
+                <div class="p-home__buy-inner">
+                    <div class="p-home__buy-column">
+                        <div class="p-home__buy-column-wrapper">
+                            <div class="p-home__buy-num">01</div>
+                            <div class="p-home__buy-text">
+                                First Connect your Metamask or TrustWallet to the "Connect Wallet" on the Homepage.
+                            </div>
+                            <div class="p-home__buy-arrow"><i class="p-home__buy-arrow_green fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-home__buy-column">
+                        <div class="p-home__buy-column-wrapper">
+                            <div class="p-home__buy-num">02</div>
+                            <div class="p-home__buy-text">
+                                Then send minimum of 0.1 BNB or maximum of 10 BNB to the Presale wallet
+                            </div>
+                            <div class="p-home__buy-arrow p-home__buy-arrow_position"><i
+                                    class="p-home__buy-arrow_yellow fas fa-chevron-down"></i></div>
+                        </div>
+                    </div>
+                    <div class="p-home__buy-column">
+                        <div class="p-home__buy-column-wrapper">
+                            <div class="p-home__buy-num">03</div>
+                            <div class="p-home__buy-text">Then after you will received your $WNTR to your address within
+                                24hours.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__bg"></div>
+        <div class="wrapper">
+            <nav class="nav footer__nav">
+                <ul class="nav__list footer__nav-list">
+                    <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline" href="team.html">Our
+                            team</a>
+                    </li>
+                    <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline"
+                            href="tokens.html">Tokens</a></li>
+                    <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline" href="#">Connect
+                            wallet</a>
+                    </li>
+                    <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline"
+                            href="#">Lightpaper</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__wrapper">
+                <div class="logo logo__footer">
+                    <a class="logo__link" href="/">
+                        <img class="logo__img logo__img-footer" src="assets/images/logo-footer.png" alt="Tokners">
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <div class="footer__social-circle">
+                        <a class="footer__social-link" href="#" target="_blank"><img class="footer__social-img"
+                                src="assets/icons/twitter.svg" alt="twitter"></a>
+                    </div>
+                    <div class="footer__social-circle">
+                        <a class="footer__social-link" href="#" target="_blank"><img class="footer__social-img"
+                                src="assets/icons/tel.svg" alt="telegram"></a>
+                    </div>
+                    <div class="footer__social-circle">
+                        <a class="footer__social-link" href="#" target="_blank"><img class="footer__social-img"
+                                src="assets/icons/inst.svg" alt="instagram"></a>
+                    </div>
+                    <div class="footer__social-circle">
+                        <a class="footer__social-link" href="#" target="_blank"><img class="footer__social-img"
+                                src="assets/icons/mail.svg" alt="mail"></a>
+                    </div>
+                    <div class="footer__social-circle">
+                        <a class="footer__social-link" href="#" target="_blank"><img class="footer__social-img"
+                                src="assets/icons/cat.svg" alt="cat"></a>
+                    </div>
+                    <div class="footer__social-circle">
+                        <a class="footer__social-link" href="#" target="_blank"><img class="footer__social-img"
+                                src="assets/icons/monkey.svg" alt="monkey"></a>
+                    </div>
+                </div>
+                <div class="footer__copyrights">
+                    <div class="footer__copyrights-text">© 2021 Tokners. All rights reserved.</div>
+                    <a href="#">
+                        <div class="footer__copyrights-author">Design by Oleg Kulik</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

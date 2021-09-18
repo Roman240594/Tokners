@@ -1,0 +1,145 @@
+.p-team {
+    &__slider {
+        background-color: $color-ebony;
+        padding-top: 14px;
+
+        @media screen and (min-width: 1660px) {
+            padding-bottom: 290px;
+        }
+
+        @include respond-to(big-desktop) {
+            padding-bottom: 98px;
+        }
+
+        &-title {
+            letter-spacing: -3px;
+            margin-bottom: 27px;
+        
+            @include respond-to(desktop) {
+                padding-top: 40px;
+                font-size: 36px;
+                line-height: 42px;
+                letter-spacing: 0;
+            }
+
+            @include respond-to(big-desktop) {
+                padding-top: 73px;
+                padding-left: 6px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &-inner {
+            margin: -10px auto;
+
+            @media screen and (min-width: 400px) {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+
+            @include respond-to(desktop) {
+                margin: -10px 0;
+                position: relative;
+            }
+        }
+
+        &-arrows {
+            display: flex;
+            position: absolute;
+            top: -83px;
+            right: 4px;
+        }
+
+        &-arrow {
+            margin: 0 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-white;
+            width: 56px;
+            height: 56px;
+            border: 2px solid rgba(255, 255, 255, 0.5);;
+            border-radius: 50%;
+        }
+
+        &-column {
+            padding: 30px 30px 0;
+            width: 335px;
+            background-color: $color-cinder;
+            border-radius: 25px;
+
+            @include respond-to(desktop) {
+                padding: 40px 40px 0;
+                width: 375px;
+                height: 560px;
+            }
+            
+            &-wrapper {
+                padding: 10px 10px;
+            }
+        }
+
+        &-name {
+            font-family: $font-bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: $color-white;
+            margin-bottom: 6px;
+        }
+
+        &-profession {
+            font-family: $font-normal;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: $color-white;
+            margin-bottom: 50px;
+
+            @include respond-to(desktop) {
+                margin-bottom: 55px;
+            }
+        }
+
+        &-img {
+            max-width: 236px;
+
+            @include respond-to(desktop) {
+                max-width: 257px;
+                
+            }
+
+            &-wrapper {
+                text-align: center;
+
+                &:hover {
+                    background-image: url(../assets/images/slider-bg.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: relative;
+                    background-position: bottom;
+                    width: 335px;
+                    height: 385px;
+                    left: -30px;
+                }
+                
+                @include respond-to(desktop) {
+                    
+                    &:hover {
+                        background-image: url(../assets/images/slider-bg.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        position: relative;
+                        background-position: center;
+                        width: 375px;
+                        height: 486px;
+                        left: -40px;
+                    }
+                }
+            }
+        }
+    }
+}

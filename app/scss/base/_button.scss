@@ -1,0 +1,42 @@
+.button {
+    font-family: $font-bold, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-white;
+    padding: 15px 29px 16px 30px;
+    border: 2px solid $color-green;
+    background-color: $color-green;
+    border-radius: 52px;
+    margin-bottom: 5px;
+    transition: all .5s;
+
+        @include respond-to(tablet-landscape) {
+            border: none;
+            padding: 15px 44px 16px 49px;
+            background-color: inherit;
+            
+            &:hover {
+                color: $color-green;
+            }
+        }
+
+    &_green {
+        background: $color-green;
+        box-shadow: 0px 15px 25px rgba(34, 167, 93, 0.25);
+        border-radius: 52px;
+        transition: all .5s;
+
+        @include respond-to(tablet-landscape) {
+            &:hover {
+                background-color:  $color-white;
+                border: 2px solid $color-green;
+            }
+        }
+    }
+
+    &_border-green {
+        border: 2px solid $color-green;
+    }
+}
